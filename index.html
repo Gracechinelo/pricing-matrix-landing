@@ -51,15 +51,34 @@
             gap: 15px;
             margin-bottom: 25px;
         }
+        /* New CSS for the Email Input */
+        .email-input {
+            width: 100%;
+            padding: 18px 20px;
+            border-radius: 8px;
+            border: 2px solid #444444;
+            background-color: #333333;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .email-input::placeholder {
+            color: #888888;
+        }
+        .email-input:focus {
+            border-color: #ffcc00;
+        }
         .cta-button {
             background-color: #ffcc00;
             color: #111111;
-            text-decoration: none; /* Removes the underline from links */
-            display: block; /* Makes the whole box clickable */
+            text-decoration: none; 
+            display: block; 
             padding: 18px 20px;
             font-size: 16px;
             font-weight: bold;
             border-radius: 8px;
+            border: none;
             cursor: pointer;
             width: 100%;
             transition: background 0.3s ease, transform 0.1s ease;
@@ -86,21 +105,16 @@
     <div class="container">
         <h1>The Ultimate Pricing Matrix for Creative Sellers</h1>
         <p class="subtitle">
-               Do you sell physical goods, delicate treats, or digital downloads? Stop guessing your margins. Calculate ingredients, heavy shipping costs, hourly wages, and platform fees instantly before you publish your next listing. <br><br>Choose your platform below to unlock your automated tools.
-           </p>
+            Do you sell physical goods, delicate treats, or digital downloads? Stop guessing your margins. Calculate ingredients, heavy shipping costs, hourly wages, and platform fees instantly before you publish your next listing. <br><br>Enter your email below to unlock your automated tools.
+        </p>
         
-        <div class="button-group">
-            <a href="https://appsave.online/sl/wre29" class="cta-button">
-                Unlock Pricing Matrix App
-            </a>
-            
-            <a href="https://appsave.online/sl/x63xp" class="cta-button">
-                Unlock Pricing Matrix Sheet
-            </a>
-        </div>
+        <form action="https://popul-telegram-lead-catcher.hf.space/submit-email" method="POST" class="button-group">
+            <input type="email" name="email" class="email-input" placeholder="Enter your best email address" required>
+            <button type="submit" class="cta-button">Unlock Free Calculator</button>
+        </form>
         
         <div class="secure-text">
-            🔒 Human verification required to prevent bot spam
+            🔒 Your email is secure. We only send tools that protect your margins.
         </div>
     </div>
 
